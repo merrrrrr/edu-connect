@@ -59,9 +59,9 @@ const App: React.FC = () => {
              {/* Student Card */}
              <Card 
                onClick={() => setRole('student')}
-               className="p-8 hover:ring-2 hover:ring-[#0071E3] transition-all cursor-pointer group animate-in zoom-in-50 duration-500 delay-100"
+               className="p-8 hover:ring-2 hover:ring-[#0071E3] transition-all cursor-pointer group animate-in zoom-in-50 duration-300"
              >
-               <div className="w-16 h-16 rounded-2xl bg-blue-50 text-[#0071E3] flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+               <div className="w-16 h-16 rounded-2xl bg-blue-50 text-[#0071E3] flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                  <GraduationCap size={32} />
                </div>
                <h3 className="text-xl font-bold mb-2">Student</h3>
@@ -71,9 +71,9 @@ const App: React.FC = () => {
              {/* Instructor Card */}
              <Card 
                onClick={() => setRole('instructor')}
-               className="p-8 hover:ring-2 hover:ring-[#5E5CE6] transition-all cursor-pointer group animate-in zoom-in-50 duration-500 delay-200"
+               className="p-8 hover:ring-2 hover:ring-[#5E5CE6] transition-all cursor-pointer group animate-in zoom-in-50 duration-300"
              >
-               <div className="w-16 h-16 rounded-2xl bg-indigo-50 text-[#5E5CE6] flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+               <div className="w-16 h-16 rounded-2xl bg-indigo-50 text-[#5E5CE6] flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                  <BookOpen size={32} />
                </div>
                <h3 className="text-xl font-bold mb-2">Instructor</h3>
@@ -83,9 +83,9 @@ const App: React.FC = () => {
              {/* Admin Card */}
              <Card 
                onClick={() => setRole('admin')}
-               className="p-8 hover:ring-2 hover:ring-[#34C759] transition-all cursor-pointer group animate-in zoom-in-50 duration-500 delay-300"
+               className="p-8 hover:ring-2 hover:ring-[#34C759] transition-all cursor-pointer group animate-in zoom-in-50 duration-300"
              >
-               <div className="w-16 h-16 rounded-2xl bg-green-50 text-[#34C759] flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+               <div className="w-16 h-16 rounded-2xl bg-green-50 text-[#34C759] flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                  <ShieldCheck size={32} />
                </div>
                <h3 className="text-xl font-bold mb-2">Admin</h3>

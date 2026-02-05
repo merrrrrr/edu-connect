@@ -59,8 +59,8 @@ export const InstructorViews: React.FC<InstructorViewProps> = ({ view }) => {
           </Card>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <Card className="p-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 ">
+          <Card className="p-6 shadow-md">
             <h3 className="font-bold mb-4">Assignments to Grade</h3>
             <div className="space-y-3">
               {[1,2,3].map(i => (
@@ -75,14 +75,14 @@ export const InstructorViews: React.FC<InstructorViewProps> = ({ view }) => {
             </div>
           </Card>
           
-           <Card className="p-6 bg-gradient-to-br from-[#1D1D1F] to-[#424245] text-white">
+           <Card className="p-6 shadow-md text-black">
              <h3 className="font-bold mb-2">Live Class Schedule</h3>
              <p className="opacity-70 text-sm mb-6">Your next session starts in 45 minutes.</p>
-             <div className="p-4 bg-white/10 backdrop-blur rounded-xl border border-white/10">
+             <div className="p-4 bg-white rounded-xl border border-black/30 shadow-sm">
                <p className="font-bold">Advanced Python Q&A</p>
                <p className="text-sm opacity-80">10:00 AM - 11:30 AM</p>
              </div>
-             <Button className="mt-6 w-full bg-white text-black hover:bg-gray-200">Start Session</Button>
+             <Button className="mt-6 w-full">Start Session</Button>
            </Card>
         </div>
       </div>
@@ -146,8 +146,8 @@ export const InstructorViews: React.FC<InstructorViewProps> = ({ view }) => {
                onChange={(e) => setMessageInput(e.target.value)}
                onKeyDown={(e) => e.key === 'Enter' && handleSendMessage()}
              />
-             <Button className="rounded-full w-10 h-10 p-0 flex items-center justify-center" onClick={handleSendMessage}>
-               <Send size={18} className="ml-0.5 mt-0.5" />
+             <Button className="rounded-full w-10 h-10 !p-0 flex items-center justify-center" onClick={handleSendMessage}>
+            	<Send size={18} className="ml-0.5 mt-0.5" />
              </Button>
            </div>
         </Card>
